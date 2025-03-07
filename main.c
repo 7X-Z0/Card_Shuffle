@@ -1,4 +1,4 @@
-//TESTING TESTING UNIX
+//TESTING TESTING UNIX & WINDOWS
 
 #include <stdio.h>
 #include <stdlib.h>
