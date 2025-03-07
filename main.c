@@ -34,13 +34,17 @@ int i;
 srand(time(NULL));
 // init the deck
 // loop on the cards
-InitDeck(deck);
+InitDeck(deck){
+    //must define
+}
 for (i=0; i<NCARDS; i++)
 {
 PrintCard(deck,i);
 }
 
-ShuffleDeck(deck);
+ShuffleDeck(deck){
+    //must define
+}
 
 // print the deck
 puts("The shuffled deck is:");
