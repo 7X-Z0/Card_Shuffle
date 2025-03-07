@@ -34,17 +34,14 @@ int i;
 srand(time(NULL));
 // init the deck
 // loop on the cards
-InitDeck(deck){
-    //must define
-}
+InitDeck(deck);
+
 for (i=0; i<NCARDS; i++)
 {
 PrintCard(deck,i);
 }
 
-ShuffleDeck(deck){
-    //must define
-}
+ShuffleDeck(deck);
 
 // print the deck
 puts("The shuffled deck is:");
@@ -56,4 +53,16 @@ printf("Printed on %s", ctime(&rawtime));
 system("PAUSE");
 
 return 0;
+}
+
+void PrintCard(card, i){
+    //Needs definition
+}
+
+void InitDeck(deck){
+    //Needs definition
+}
+
+void ShuffleDeck(deck){
+    //Needs definition
 }
