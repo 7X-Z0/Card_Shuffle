@@ -1,10 +1,11 @@
+//TESTING TESTING
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 #define NCARDS 52
 #define NPROPS 2
-
 #define NSUITS 4
 #define NFACES 13
 
