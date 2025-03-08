@@ -55,14 +55,18 @@ system("PAUSE");
 return 0;
 }
 
-void PrintCard(card, i){
-    //Needs definition
+void PrintCard(int deck[NCARDS][NPROPS], int i){
+    int cardFace = deck[i][0];
+    int cardSuit = deck[i][1];
+    printf("Card is %s of %s", cardFace, cardSuit);
 }
 
-void InitDeck(deck){
-    //Needs definition
+void InitDeck(int deck[NCARDS][NPROPS]){
+    for (int i=0; i<=NCARDS-1; i++){
+    //Face value
+    deck[i][0] = (i / 4) + 1;
+    //Suit
+    deck[i][1] = i % 4;
+    }
 }
 
-void ShuffleDeck(deck){
-    //Needs definition
-}
