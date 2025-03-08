@@ -19,6 +19,7 @@ char* face[]={"blank","ace","two","three","four","five","six","seven","eight","n
 void PrintCard(int deck[NCARDS][NPROPS], int i);
 void InitDeck(int deck[NCARDS][NPROPS]);
 void ShuffleDeck(int deck[NCARDS][NPROPS]);
+void SwapCards(int deck[NCARDS][NPROPS], int src, int dest);
 
 int main()
 {
@@ -61,10 +62,19 @@ void PrintCard(int deck[NCARDS][NPROPS], int i){
 
 void InitDeck(int deck[NCARDS][NPROPS]){
     for (int i=0; i<=NCARDS-1; i++){
-    //Face value
+    //Face
     deck[i][0] = (i / 4) + 1;
     //Suit
     deck[i][1] = i % 4;
+    }
+}
+void SwapCards(int deck[NCARDS][NPROPS], int src, int dest){
+    int tmp
+    int i
+    for (i=0; i<2; i++){
+        tmp = deck[dest][i];
+        deck[dest][i] = deck[src][i];
+        deck[src][i] = tmp;
     }
 }
 
