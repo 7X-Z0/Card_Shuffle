@@ -48,7 +48,7 @@ for (i=0; i<NCARDS; i++)
 {
 PrintCard(deck,i);
 }
-printf("Printed on %s", ctime(&rawtime));
+printf("Printed on %s and Made by Lorenzo Guzman", ctime(&rawtime));
 system("PAUSE");
 
 return 0;
@@ -57,11 +57,11 @@ return 0;
 void PrintCard(int deck[NCARDS][NPROPS], int i){
     int cardFace = deck[i][0];
     int cardSuit = deck[i][1];
-    printf("Card is %s of %s", cardFace, cardSuit);
+    printf("%s of %s \n", face[cardFace], suit[cardSuit]);
 }
 
 void InitDeck(int deck[NCARDS][NPROPS]){
-    for (int i=0; i<=NCARDS-1; i++){
+    for (int i=0; i<NCARDS-1; i++){
     //Face
     deck[i][0] = (i / 4) + 1;
     //Suit
@@ -69,12 +69,16 @@ void InitDeck(int deck[NCARDS][NPROPS]){
     }
 }
 void SwapCards(int deck[NCARDS][NPROPS], int src, int dest){
-    int tmp
-    int i
+    int tmp;
+    int i;
     for (i=0; i<2; i++){
         tmp = deck[dest][i];
         deck[dest][i] = deck[src][i];
         deck[src][i] = tmp;
     }
 }
+void ShuffleDeck(int deck[NCARDS][NPROPS]){
+    for(int i=0; i<NCARDS-1; i++){
 
+    }
+}
