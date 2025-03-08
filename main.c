@@ -18,15 +18,13 @@ char* face[]={"blank","ace","two","three","four","five","six","seven","eight","n
 // function prototypes used for manipulating cards
 void PrintCard(int deck[NCARDS][NPROPS], int i);
 void InitDeck(int deck[NCARDS][NPROPS]);
-void SwapCards(int deck[NCARDS][NPROPS], int src, int dest);
 void ShuffleDeck(int deck[NCARDS][NPROPS]);
-int GetPlayValue(int deck[NCARDS][NPROPS], int i);
 
 int main()
 {
 
 //deck of cards
-// face, suite, card value
+// face, suite
 int deck[NCARDS][NPROPS];
 time_t rawtime=time(NULL);
 int i;
