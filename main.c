@@ -49,7 +49,6 @@ for (i=0; i<NCARDS; i++)
 PrintCard(deck,i);
 }
 printf("Printed on %s and Made by Lorenzo Guzman", ctime(&rawtime));
-system("PAUSE");
 
 return 0;
 }
@@ -61,11 +60,11 @@ void PrintCard(int deck[NCARDS][NPROPS], int i){
 }
 
 void InitDeck(int deck[NCARDS][NPROPS]){
-    for (int i=0; i<NCARDS-1; i++){
+    for (int i=0; i<NCARDS; i++){
     //Face
-    deck[i][0] = (i / 4) + 1;
+    deck[i][0] = (i % NFACES) + 1;
     //Suit
-    deck[i][1] = i % 4;
+    deck[i][1] = i % NSUITS;
     }
 }
 void SwapCards(int deck[NCARDS][NPROPS], int src, int dest){
