@@ -1,2 +1,3 @@
 # Card_Shuffle
-Class
+Class assignment
+Code done by Lorenzo Guzman
